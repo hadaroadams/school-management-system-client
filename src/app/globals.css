@@ -79,10 +79,11 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-background text-foreground;
+  }
+
+  .neutral-border {
+    @apply border  border-neutral-light;
   }
 }

@@ -4,10 +4,11 @@ import { GoSearch } from "react-icons/go";
 
 const SearchInput = () => {
   return (
-    <div className="flex relative items-center justify-end">
+    <div className="max-lg:hidden flex relative items-center justify-end w-[400px]
+    ">
       <Input name="search" placeholder="search" />
       <button className="absolute mr-2">
-        <GoSearch />
+        <GoSearch className=" fill-text_primary-light " />
       </button>
     </div>
   );

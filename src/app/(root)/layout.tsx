@@ -1,7 +1,7 @@
 import AppSidebar from "@/components/AppSidebar";
 import Header from "@/components/Header";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { Sidebar } from "lucide-react";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+
 import React from "react";
 
 const Rootlayout = ({ children }: { children: React.ReactNode }) => {
