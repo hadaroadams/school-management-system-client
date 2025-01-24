@@ -21,7 +21,7 @@ import { SidebarTrigger } from "./ui/sidebar";
 
 const Header = () => {
   return (
-    <header className="w-full px-5 py-1 neutral-border">
+    <header className="w-full px-5 py-1 neutral-border sticky top-0 bg-white">
       <div className="flex w-full justify-between max-md:hidden items-center">
         <SidebarTrigger size={"lg"} />
         <SearchInput />
@@ -30,13 +30,13 @@ const Header = () => {
           <AccademicYearDropdown />
           <CountryLangDropDown />
           <AddNewDropDown />
-          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_primary-light">
+          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_neutral">
             <MdOutlineDarkMode className="size-4" />
           </button>
-          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_primary-light">
+          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_neutral">
             <FaRegBell className="size-4" />
           </button>
-          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_primary-light">
+          <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_neutral">
             <LuMessageCircleMore className="size-4" />
           </button>
           <button className="flex w-12 h-12 justify-center items-center">

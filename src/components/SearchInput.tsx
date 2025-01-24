@@ -8,7 +8,7 @@ const SearchInput = () => {
     ">
       <Input name="search" placeholder="search" />
       <button className="absolute mr-2">
-        <GoSearch className=" fill-text_primary-light " />
+        <GoSearch className=" fill-text_neutral " />
       </button>
     </div>
   );

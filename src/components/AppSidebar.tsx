@@ -12,11 +12,12 @@ import { menuRoutes, otherRoutes } from "@/lib/links";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ScrollArea } from "./ui/scroll-area";
+import LinkMenu from "./LinkMenu";
 
 function AppSidebar() {
   return (
     <>
-      <Sidebar>
+      <Sidebar className="bg-white">
         <SidebarHeader>
           <div className="flex w-full justify-between">
             <div className="flex w-32">
@@ -47,46 +48,18 @@ function AppSidebar() {
             </div>
           </SidebarGroup>
           <SidebarGroup>
-            <h2 className="font-bold text-text_primary-light mb-2">Menu</h2>
+            <h2 className="font-bold text-text_neutral mb-2">Menu</h2>
             <ScrollArea className="h-[250px] neutral-border">
-              {menuRoutes.map((item, index) => {
-                const { href, icon, title } = item;
-                return (
-                  <>
-                    <Link
-                      href={href}
-                      key={index}
-                      className={cn(
-                        "text-text_primary-light hover:text-primary-dark flex gap-5 text-md items-center p-2  rounded-md"
-                      )}
-                    >
-                      {icon}
-                      <span>{title}</span>
-                    </Link>
-                  </>
-                );
-              })}
+              {menuRoutes.map((item, index) => (
+                <LinkMenu {...item} key={`${index}`} />
+              ))}
             </ScrollArea>
           </SidebarGroup>
           <SidebarGroup>
-            <h2 className="font-bold text-text_primary-light mb-2">Others</h2>
-            {otherRoutes.map((item, index) => {
-              const { href, icon, title } = item;
-              return (
-                <>
-                  <Link
-                    href={href}
-                    key={index}
-                    className={cn(
-                      "text-text_primary-light hover:text-primary-dark flex gap-5 text-md items-center p-2  rounded-md"
-                    )}
-                  >
-                    {icon}
-                    <span>{title}</span>
-                  </Link>
-                </>
-              );
-            })}
+            <h2 className="font-bold text-text_neutral mb-2">Others</h2>
+            {otherRoutes.map((item, index) => (
+              <LinkMenu {...item} key={`${index}`} />
+            ))}
           </SidebarGroup>
         </SidebarContent>
         <SidebarFooter />

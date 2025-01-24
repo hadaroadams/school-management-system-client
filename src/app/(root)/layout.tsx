@@ -8,10 +8,10 @@ const Rootlayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main className="w-full">
+      <main className="w-full relative">
         <div>
           <Header />
-          {children}
+          <div className="px-6 py-4">{children}</div>
         </div>
       </main>
     </SidebarProvider>

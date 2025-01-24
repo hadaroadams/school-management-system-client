@@ -22,7 +22,7 @@ export default {
           light: "#FEF8EA",
         },
         success: {
-          DEFAUlT: "#1ABE17",
+          DEFAULT: "#1ABE17",
           light: "#E8F9E8",
         },
         warning: {
@@ -33,10 +33,15 @@ export default {
           DEFAULT: "#05C3FB",
           light: "#E8FCFF",
         },
-        neutral: { light: "#F3F4F6", DEFAULT: "#E9EDF4" },
+        neutral: { DEFAULT: "#E9EDF4", light: "#F3F4F6", dark: "#DFE5EF" },
+
+        text_neutral: {
+          DEFAULT: "#6A7287",
+          dark: "#515B73",
+        },
+
         text_primary: {
           DEFAULT: "#202C4B",
-          light: "#6A7287",
         },
       },
       borderRadius: {

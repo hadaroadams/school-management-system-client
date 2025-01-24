@@ -39,7 +39,7 @@ export const menuRoutes = [
   {
     icon: <MdOutlinePermContactCalendar />,
     title: "Calendar",
-    href: "/calender",
+    href: "/calendar",
   },
   {
     icon: <MdOutlineNoteAlt />,

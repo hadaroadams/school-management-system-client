@@ -86,4 +86,7 @@ body {
   .neutral-border {
     @apply border  border-neutral-light;
   }
+  .text-1 {
+    @apply max-lg:text-[1.2em] font-semibold text-[1.3em];
+  }
 }

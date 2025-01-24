@@ -12,7 +12,7 @@ export const AccademicYearDropdown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <button className="flex justify-center items-center gap-2 p-2 outline outline-[1px]  outline-gray-200 rounded-md  text-text_primary-light text-sm">
+        <button className="flex justify-center items-center gap-2 p-2 outline outline-[1px]  outline-gray-200 rounded-md  text-text_neutral text-sm">
           <FaRegCalendarAlt className="size-3" />
           <span className="text-nowrap">Academic Year : 2024 / 2025</span>
         </button>

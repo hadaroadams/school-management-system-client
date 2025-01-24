@@ -1,0 +1,37 @@
+export const totalMembers = [
+  {
+    title: "Total Students",
+    thumbnail: "/student.svg",
+    percentage: 47.3,
+    total: 3654,
+    active: 3643,
+    inactive: 11,
+    color: "",
+  },
+  {
+    title: "Total Teachers",
+    thumbnail: "/teacher.svg",
+    percentage: 7.3,
+    total: 284,
+    active: 254,
+    inactive: 30,
+    color: "",
+  },
+  {
+    title: "Total Staff",
+    thumbnail: "/staff.svg",
+    percentage: 3.5,
+    total: 161,
+    active: 160,
+    inactive: 1,
+    color: "",
+  },
+  {
+    title: "Total Subjects",
+    thumbnail: "/subject.svg",
+    percentage: 1.2,
+    total: 81,
+    active: 81,
+    inactive: 1,
+  },
+];

@@ -11,7 +11,7 @@ export const AddNewDropDown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_primary-light">
+        <button className="flex justify-center items-center gap-2 p-1 outline outline-[1px]  outline-gray-200 rounded-md w-10 h-10  text-text_neutral">
           <MdAddCircleOutline className="size-4" />
         </button>
       </DropdownMenuTrigger>
